@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF-Ready Storefront</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="logo">PDF-Ready</div>
+  <div class="nav-links">
+    <a href="#products">Shop</a>
+    <a href="#bundles">Bundles</a>
+    <a href="#domains">Domains</a>
+    <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Deterministic Licensing & Verification Systems</h1>
+  <p>Enterprise-grade document frameworks for licensing, compliance, and verifiable digital releases.</p>
+  <div class="cta">
+    <a href="#products" class="btn primary">Shop Products</a>
+    <a href="#bundles" class="btn">View Bundles</a>
+  </div>
+</section>
+
+<section class="network">
+  <h2>The PDF-Ready Network</h2>
+  <ul>
+    <li><strong>pdf-ready.pw</strong> — storefront + catalog</li>
+    <li><strong>pdf-ready.spend</strong> — checkout + payments</li>
+    <li><strong>pdf-ready.pack</strong> — delivery + releases</li>
+    <li><strong>pdf-ready.onchain</strong> — proof / verification anchor</li>
+  </ul>
+</section>
+
+<section id="products" class="products">
+  <h2>All Products</h2>
+  <div id="productGrid"></div>
+</section>
+
+<div id="cartPanel" class="cart hidden">
+  <h3>Your Cart</h3>
+  <div id="cartItems"></div>
+  <div class="cartFooter">
+    <strong>Total: $<span id="cartTotal">0</span></strong>
+    <button class="btn primary">Checkout</button>
+  </div>
+</div>
+
+<footer>
+  <p>PDF-Ready — Deterministic Document Infrastructure</p>
+  <p>Publisher of Record: Kam Swygert</p>
+  <p>Informational templates. Not legal or financial advice.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
